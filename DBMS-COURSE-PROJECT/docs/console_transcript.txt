@@ -1,0 +1,301 @@
+
+=== HIPCMS LOGIN ===
+(demo accounts: admin/agent1/agent2/assessor1/assessor2, password: 'password')
+Username: Password: Welcome, System Administrator (ADMIN)
+
+
+=========== HIPCMS MAIN MENU ===========
+ 1. Add customer
+ 2. Add dependant
+ 3. Issue policy
+ 4. Collect premium
+ 5. Submit claim
+ 6. Verify claim / attach document
+ 7. Assess claim & record decision
+ 8. Settle claim
+ 9. File appeal
+10. Resolve appeal
+11. Search / lookup
+12. Reports
+ 0. Logout & exit
+=========================================
+
+Enter choice: 
+-- New Customer --
+First name: Last name: DOB (YYYY-MM-DD): Gender ['M', 'F', 'O']: ID proof number: Phone (10 digits): Email: Address line: City: State: Pincode: Customer created with customer_id = 16
+
+=========== HIPCMS MAIN MENU ===========
+ 1. Add customer
+ 2. Add dependant
+ 3. Issue policy
+ 4. Collect premium
+ 5. Submit claim
+ 6. Verify claim / attach document
+ 7. Assess claim & record decision
+ 8. Settle claim
+ 9. File appeal
+10. Resolve appeal
+11. Search / lookup
+12. Reports
+ 0. Logout & exit
+=========================================
+
+Enter choice: 
+-- Issue Policy --
+Available plans:
+plan_id | plan_name                        | plan_type      | coverage_amount | premium_amount
+----------------------------------------------------------------------------------------------
+1       | HealthSecure Individual Basic    | INDIVIDUAL     | 300000.0        | 8500.0        
+2       | HealthSecure Family Floater Gold | FAMILY_FLOATER | 1000000.0       | 22000.0       
+3       | SeniorCare Plus                  | SENIOR_CITIZEN | 500000.0        | 18000.0       
+4       | CorpShield Group Cover           | GROUP          | 2000000.0       | 15000.0       
+5       | SmartCare Micro                  | INDIVIDUAL     | 150000.0        | 4500.0        
+
+Customer ID: Plan ID: Sum insured (suggested 1000000.0): Start date (YYYY-MM-DD): End date (YYYY-MM-DD): Policy issued: POL-2026-5416 (policy_id=16); first premium installment scheduled.
+
+=========== HIPCMS MAIN MENU ===========
+ 1. Add customer
+ 2. Add dependant
+ 3. Issue policy
+ 4. Collect premium
+ 5. Submit claim
+ 6. Verify claim / attach document
+ 7. Assess claim & record decision
+ 8. Settle claim
+ 9. File appeal
+10. Resolve appeal
+11. Search / lookup
+12. Reports
+ 0. Logout & exit
+=========================================
+
+Enter choice: 
+-- Premium Collection --
+Policy ID: premium_id | policy_id | due_date   | amount_due | status 
+----------------------------------------------------------
+21         | 16        | 2025-09-01 | 22000.0    | PENDING
+
+Premium ID to pay: Amount paid (due 22000.0): Payment mode ['CASH', 'CARD', 'UPI', 'NETBANKING', 'CHEQUE']: Payment recorded (TXN-2026-7107); premium marked PAID.
+
+=========== HIPCMS MAIN MENU ===========
+ 1. Add customer
+ 2. Add dependant
+ 3. Issue policy
+ 4. Collect premium
+ 5. Submit claim
+ 6. Verify claim / attach document
+ 7. Assess claim & record decision
+ 8. Settle claim
+ 9. File appeal
+10. Resolve appeal
+11. Search / lookup
+12. Reports
+ 0. Logout & exit
+=========================================
+
+Enter choice: 
+-- Submit Claim --
+Policy ID: Dependant ID (blank if claim is for the policyholder): Hospitals:
+hospital_id | hospital_name                  | city      | network_type
+-----------------------------------------------------------------------
+1           | Apollo Speciality Hospital     | Chennai   | NETWORK     
+2           | Care Hospitals                 | Hyderabad | NETWORK     
+3           | Ruby Hall Clinic               | Pune      | NETWORK     
+4           | City General Hospital          | Chennai   | NON_NETWORK 
+5           | Manipal Hospital               | Bengaluru | NETWORK     
+6           | Lilavati Hospital              | Mumbai    | NETWORK     
+7           | Fortis Escorts Heart Institute | New Delhi | NETWORK     
+8           | KIMS Hospital                  | Kochi     | NON_NETWORK 
+
+Hospital ID: Claim date (YYYY-MM-DD): Claimed amount: 
+Enter treatment details for this claim:
+Treatment name: Diagnosis: Admission date (YYYY-MM-DD): Discharge date (YYYY-MM-DD): Treatment cost: 
+Claim submitted: CLM-2026-8916 (claim_id=16), status=SUBMITTED
+
+=========== HIPCMS MAIN MENU ===========
+ 1. Add customer
+ 2. Add dependant
+ 3. Issue policy
+ 4. Collect premium
+ 5. Submit claim
+ 6. Verify claim / attach document
+ 7. Assess claim & record decision
+ 8. Settle claim
+ 9. File appeal
+10. Resolve appeal
+11. Search / lookup
+12. Reports
+ 0. Logout & exit
+=========================================
+
+Enter choice: 
+-- Claim Verification (attach documents, mark VERIFIED) --
+Claim ID: Attach a document now? ['Y', 'N']: Document type ['PRESCRIPTION', 'DISCHARGE_SUMMARY', 'BILL', 'LAB_REPORT', 'ID_PROOF', 'OTHER']: File reference/path: Claim CLM-2026-8916 marked VERIFIED.
+
+=========== HIPCMS MAIN MENU ===========
+ 1. Add customer
+ 2. Add dependant
+ 3. Issue policy
+ 4. Collect premium
+ 5. Submit claim
+ 6. Verify claim / attach document
+ 7. Assess claim & record decision
+ 8. Settle claim
+ 9. File appeal
+10. Resolve appeal
+11. Search / lookup
+12. Reports
+ 0. Logout & exit
+=========================================
+
+Enter choice: 
+-- Claim Assessment --
+Claim ID: Assessed amount: Remarks: Assessment recorded for claim CLM-2026-8916.
+Record a decision now? ['Y', 'N']: Decision ['APPROVED', 'REJECTED', 'PARTIALLY_APPROVED']: Approved amount: Decision recorded: APPROVED. Claim status updated automatically.
+
+=========== HIPCMS MAIN MENU ===========
+ 1. Add customer
+ 2. Add dependant
+ 3. Issue policy
+ 4. Collect premium
+ 5. Submit claim
+ 6. Verify claim / attach document
+ 7. Assess claim & record decision
+ 8. Settle claim
+ 9. File appeal
+10. Resolve appeal
+11. Search / lookup
+12. Reports
+ 0. Logout & exit
+=========================================
+
+Enter choice: 
+-- Settlement --
+Claim ID (must be APPROVED): Settlement amount (approved 38000.0): Settlement mode ['NEFT', 'CHEQUE', 'UPI']: Settlement recorded (SETL-2026-8983); claim marked SETTLED.
+
+=========== HIPCMS MAIN MENU ===========
+ 1. Add customer
+ 2. Add dependant
+ 3. Issue policy
+ 4. Collect premium
+ 5. Submit claim
+ 6. Verify claim / attach document
+ 7. Assess claim & record decision
+ 8. Settle claim
+ 9. File appeal
+10. Resolve appeal
+11. Search / lookup
+12. Reports
+ 0. Logout & exit
+=========================================
+
+Enter choice: 
+-- Reports --
+1. Active Policies
+2. Premium Dues
+3. Pending Claims
+4. Claim Approval Rate
+5. Settlement Report
+6. Hospital-wise Claims
+7. Appeals Report
+Choice: 
+=== Pending Claims ===
+claim_number  | policy_number | policyholder | hospital_name              | claim_date | claimed_amount | status   
+-------------------------------------------------------------------------------------------------------------------
+CLM-2025-0003 | POL-2025-0004 | Sneha Patil  | Ruby Hall Clinic           | 2025-06-15 | 120000.0       | SUBMITTED
+CLM-2025-0009 | POL-2025-0010 | Sunita Rao   | KIMS Hospital              | 2025-08-15 | 15000.0        | SUBMITTED
+CLM-2025-0015 | POL-2025-0009 | Anil Kapoor  | Apollo Speciality Hospital | 2025-10-01 | 60000.0        | SUBMITTED
+
+=========== HIPCMS MAIN MENU ===========
+ 1. Add customer
+ 2. Add dependant
+ 3. Issue policy
+ 4. Collect premium
+ 5. Submit claim
+ 6. Verify claim / attach document
+ 7. Assess claim & record decision
+ 8. Settle claim
+ 9. File appeal
+10. Resolve appeal
+11. Search / lookup
+12. Reports
+ 0. Logout & exit
+=========================================
+
+Enter choice: 
+-- Reports --
+1. Active Policies
+2. Premium Dues
+3. Pending Claims
+4. Claim Approval Rate
+5. Settlement Report
+6. Hospital-wise Claims
+7. Appeals Report
+Choice: 
+=== Settlement Report ===
+transaction_ref | claim_number  | policy_number | policyholder      | approved_amount | settled_amount | settlement_date | settlement_mode
+------------------------------------------------------------------------------------------------------------------------------------------
+TXN-SETL-0001   | CLM-2025-0002 | POL-2025-0002 | Divya Iyer        | 45000.0         | 45000.0        | 2025-05-26      | NEFT           
+TXN-SETL-0002   | CLM-2025-0005 | POL-2025-0006 | Lakshmi Narayanan | 30000.0         | 30000.0        | 2025-05-06      | UPI            
+TXN-SETL-0003   | CLM-2025-0006 | POL-2025-0007 | Rajesh Kumar      | 72000.0         | 72000.0        | 2025-07-16      | NEFT           
+TXN-SETL-0004   | CLM-2025-0007 | POL-2025-0008 | Priya Venkatesh   | 20000.0         | 20000.0        | 2025-04-26      | UPI            
+TXN-SETL-0005   | CLM-2025-0010 | POL-2025-0012 | Neha Gupta        | 40000.0         | 40000.0        | 2025-09-07      | NEFT           
+TXN-SETL-0006   | CLM-2025-0013 | POL-2025-0001 | Arun Sharma       | 30000.0         | 30000.0        | 2025-07-21      | CHEQUE         
+TXN-SETL-0007   | CLM-2025-0014 | POL-2025-0007 | Rajesh Kumar      | 45000.0         | 45000.0        | 2025-08-07      | UPI            
+SETL-2026-8983  | CLM-2026-8916 | POL-2026-5416 | Rahul Verma       | 38000.0         | 38000.0        | 2026-09-24      | NEFT           
+
+=========== HIPCMS MAIN MENU ===========
+ 1. Add customer
+ 2. Add dependant
+ 3. Issue policy
+ 4. Collect premium
+ 5. Submit claim
+ 6. Verify claim / attach document
+ 7. Assess claim & record decision
+ 8. Settle claim
+ 9. File appeal
+10. Resolve appeal
+11. Search / lookup
+12. Reports
+ 0. Logout & exit
+=========================================
+
+Enter choice: 
+-- Reports --
+1. Active Policies
+2. Premium Dues
+3. Pending Claims
+4. Claim Approval Rate
+5. Settlement Report
+6. Hospital-wise Claims
+7. Appeals Report
+Choice: 
+=== Hospital-wise Claims ===
+hospital_name                  | city      | total_claims | total_claimed_amount | avg_claim_amount
+---------------------------------------------------------------------------------------------------
+Apollo Speciality Hospital     | Chennai   | 5            | 250000.0             | 50000.0         
+Care Hospitals                 | Hyderabad | 3            | 145000.0             | 48333.33        
+KIMS Hospital                  | Kochi     | 2            | 27000.0              | 13500.0         
+Lilavati Hospital              | Mumbai    | 2            | 295000.0             | 147500.0        
+Manipal Hospital               | Bengaluru | 1            | 75000.0              | 75000.0         
+City General Hospital          | Chennai   | 1            | 30000.0              | 30000.0         
+Fortis Escorts Heart Institute | New Delhi | 1            | 40000.0              | 40000.0         
+Ruby Hall Clinic               | Pune      | 1            | 120000.0             | 120000.0        
+
+=========== HIPCMS MAIN MENU ===========
+ 1. Add customer
+ 2. Add dependant
+ 3. Issue policy
+ 4. Collect premium
+ 5. Submit claim
+ 6. Verify claim / attach document
+ 7. Assess claim & record decision
+ 8. Settle claim
+ 9. File appeal
+10. Resolve appeal
+11. Search / lookup
+12. Reports
+ 0. Logout & exit
+=========================================
+
+Enter choice: Goodbye.
