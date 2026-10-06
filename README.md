@@ -2,9 +2,9 @@
 
 ## Student Details
 
-- Name: <add your name>
-- Roll Number: <add your roll number>
-- Section: <add your section>
+- Name: B.Tanishqa
+- Roll Number: 25WU0102285
+- Section: AIML PANTHERS
 - Course: Database Management Systems
 
 ## Project Description
